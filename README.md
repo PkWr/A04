@@ -2,12 +2,13 @@
 
 This repository holds a single static draft page, published for review only. It is not approved and not for circulation.
 
-The page is the staff AI literacy primer (draft) for the SCII Gen AI group, built on 13 November 2026 from the markdown draft. It is generated, so changes are made in the source and rebuilt rather than edited here. The page carries a noindex tag, but the repository and the page are public to anyone with the link.
+The page is the staff AI literacy primer (draft) for the SCII Gen AI group, built on 14 November 2026 from the markdown draft (now nine tiers, 66 references, with a subject-area tier and a token calculator). It is generated, so changes are made in the source and rebuilt rather than edited here. The page carries a noindex tag, but the repository and the page are public to anyone with the link.
 
 ## Known open items
 
-- 19 claims in the text are still marked [src?] because a source has not yet been confirmed.
+- 24 claims in the text are still marked [src?] because a source has not yet been confirmed.
 - The token calculator sources are not yet in the reference bias register.
+- The subject-area tier (creative writing, fine art, fashion, graphic design) is a starter pattern, to be co-written with subject leads.
 - One line in the neurodivergence tier is written in the first person and needs rewording.
 
 ## Files
@@ -16,3 +17,5 @@ The page is the staff AI literacy primer (draft) for the SCII Gen AI group, buil
 - fonts/: IBM Plex Mono (Latin subset), self-hosted under the SIL Open Font License 1.1, so the page makes no requests to Google Fonts.
 
 Contact: fao@pkwr.co
+
+The previous version is kept on the branch archive-2026-11-14.
