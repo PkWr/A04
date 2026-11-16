@@ -52,6 +52,8 @@ footer{color:var(--muted);font-size:12px;margin-top:3rem}
 .rule-word{font:inherit;color:inherit;background:var(--wob);border:0;border-radius:0;padding:0 2px 5px;cursor:pointer;min-height:0}
 .rule-word:hover{background-color:#d9ffe9}
 .ask input::placeholder{color:var(--muted);opacity:1}
+.ask input::-webkit-calendar-picker-indicator{display:none!important;opacity:0}
+.ask input[list]{appearance:none;-webkit-appearance:none}
 .ask input:focus,.ask input:focus-visible{outline:none;box-shadow:none}
 .rule-word .dice{vertical-align:-2px;margin:0;fill:currentColor}
 .ask input{font:inherit;color:inherit;background:var(--wob);border:0;border-radius:0;padding:0 2px 5px;width:14ch;max-width:100%;min-height:0}
@@ -104,7 +106,7 @@ function words(t){return t.toLowerCase().split(/[^a-z0-9]+/).filter(function(w){
 function count(h,n){return h.split(n).length-1;}
 function setHint(n,reset){if(vi<0){hint.textContent=reset?'Pick an action, type a subject, or tap the dice for an idea.':n+(n===1?' entry':' entries')+' found. Tap an underlined word to change it.';return;}hint.textContent=(reset?'':n+(n===1?' entry':' entries')+' found. ')+Vs[vi].k.charAt(0).toUpperCase()+Vs[vi].k.slice(1)+' looks at '+Vs[vi].hint+'. Tap an underlined word to change it.';}
 function sugs(){var l=[];E.forEach(function(e){if((vi<0||Vs[vi].tiers.indexOf(e.tier)>-1)&&l.indexOf(e.title)<0)l.push(e.title);});return l;}
-function fit(){topic.style.width=Math.max(6,(topic.value||topic.placeholder).length+1)+'ch';}
+function fit(){topic.style.width=Math.max(6,(topic.value||topic.placeholder).length+2)+'ch';}
 function run(){fit();
  var v=vi<0?{k:'',tiers:[],hint:''}:Vs[vi],sb=Ss[si];verb.textContent=v.k||'action';subjB.textContent=sb.k;var ws=words(topic.value),out_=[];
  out.textContent='';setHint(0,true);
