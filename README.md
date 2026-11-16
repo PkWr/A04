@@ -11,3 +11,6 @@ The page describes how the staff AI literacy primer for the SCII Gen AI group is
 - fonts/: IBM Plex Mono (Latin subset), self-hosted under the SIL Open Font License 1.1, so the page makes no requests to Google Fonts.
 
 Contact: fao@pkwr.co
+
+## Credits
+Icons: Google Material Symbols (outlined, weight 300), Apache License 2.0, embedded inline; no external requests.
